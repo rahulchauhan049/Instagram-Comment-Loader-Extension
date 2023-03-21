@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+}
+
+#header {
+  background-color: rgb(62, 62, 62);
+  width: 200px;
+  text-shadow: 1ch;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(236, 236, 236);
+  text-align: center;
+  padding: 10px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+#commentLoading {
+  color: white;
+  background-color: #000;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.progress-pie-chart {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  position: relative;
+  margin: 10px 0px;
+}
+.progress-pie-chart.gt-50 {
+  background-color: #81ce97;
+}
+
+.ppc-progress {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  clip: rect(0, 100px, 100px, 50px);
+}
+.ppc-progress .ppc-progress-fill {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  clip: rect(0, 50px, 100px, 0);
+  background: #81ce97;
+  transform: rotate(0deg);
+}
+.gt-50 .ppc-progress {
+  clip: rect(0, 50px, 100px, 0);
+}
+.gt-50 .ppc-progress .ppc-progress-fill {
+  clip: rect(0, 100px, 100px, 50px);
+  background: #e5e5e5;
+}
+
+.ppc-percents {
+  content: "";
+  position: absolute;
+  border-radius: 510%;
+  left: calc(50% - 80.9130434783px / 2);
+  top: calc(50% - 80.9130434783px / 2);
+  width: 80.9130434783px;
+  height: 80.9130434783px;
+  background: #000;
+  text-align: center;
+  display: table;
+}
+.ppc-percents span {
+  display: block;
+  font-size: 20px;
+  font-weight: 100px;
+  color: #fff;
+}
+
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hidden {
+  display: none;
+}
+
+#connectionButton {
+  background-color: #2ea44f;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  list-style: 20px;
+  padding: 6px 16px;
+  margin: 0px 20px;
+  margin-bottom: 10px;
+}
+
+#stopButton {
+  background-color: #ac0e0e;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  list-style: 20px;
+  padding: 6px 16px;
+  margin: 0px 20px;
+  margin-bottom: 10px;
+}

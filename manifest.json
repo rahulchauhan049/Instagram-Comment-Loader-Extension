@@ -1,0 +1,15 @@
+{
+  "name": "Load all comments for instagram",
+  "version": "0.1.0",
+  "description": "Load all comments for instagram",
+  "permissions": ["storage","tabs", "scripting"],
+  "host_permissions": ["https://www.instagram.com/p/*"],
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
